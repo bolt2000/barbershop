@@ -1,0 +1,130 @@
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @include min-table {
+        flex-wrap: wrap;
+        flex-direction: row;
+        :nth-child(1) {
+            margin-right: 30px;
+        }
+    }
+ 
+
+    &__title {
+        width: 100%;
+        margin: 0 0 44px 0;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.05em;
+        color: $primer-text-color;
+        @include max-mobil {
+            font-size: 26px;
+            line-height: 1.1;
+        }
+        @include min-table {
+            text-align: start;
+        }
+    }
+
+    &__label {
+        width: 100%;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        margin: 0 0 44px 0;
+        @include transition (all);
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background-color: $form-color;
+            bottom: 0;
+            opacity: 1;
+            @include transition (all);
+                         
+        }
+        @include desctop {
+            width: 570px;
+        }
+        &--position {
+            @include table {
+                width: 330px;
+            }
+            @include desctop {
+                width: 270px;
+            }
+        }
+               
+    }
+    &__label:hover:before,
+    &__label:active:before {
+        opacity: 0;
+    }
+
+    &__input {
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+        height: 24px;
+        background-color: $form-bg-color;
+        border: inherit;
+        outline: none;
+        padding-bottom: 8px;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 1.36;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $primer-text-color;
+        @include transition (all);
+        @include table {
+            width: 330px;
+        }
+        
+
+           
+    }
+    ::placeholder {
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 1.36;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $form-color;
+        @include transition (color);
+    }
+    &__label:hover ::placeholder,
+    &__label:active ::placeholder {
+        color: $primer-text-color;
+    }
+
+    &__textarea {
+        height: 76px;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 1.36;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $form-color;
+        background-color: $form-bg-color;
+        border: inherit;
+        outline: none;
+        @include transition (all);
+
+         
+    }
+    &__label:hover &__textarea,
+    &__label:active &__textarea,
+    &__label:hover &__input,
+    &__label:active &__input {
+        color: $primer-text-color;
+        border-bottom: 1px solid $primer-text-color;
+    }
+
+}

@@ -1,0 +1,494 @@
+.section {
+    padding-top: 84px;
+    padding-bottom: 84px;
+
+    @include desctop {
+        padding-top: 120px;
+        padding-bottom: 120px;
+
+    }
+
+    &__general {
+        max-width: 480px;
+        height: 580px;
+        padding-top: 208px;
+        padding-bottom: 208px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(25, 28, 38, 0.2);
+        background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/bgimg/generalmob.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+
+            background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+                url(../img/bgimg/generalmob@2x.jpg);
+
+        }
+
+        @include mobil {
+            background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/bgimg/generaltable.jpg);
+
+            @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+
+                background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+                    url(../img/bgimg/generaltable@2x.jpg);
+
+            }
+        }
+
+        @include table {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            max-width: 570px;
+            height: 680px;
+            margin: 0;
+            background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/bgimg/generaldesctop.jpg);
+
+            @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+
+                background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+                    url(../img/bgimg/generaldesctop@2x.jpg);
+
+
+            }
+        }
+
+        @include desctop {
+            max-width: 1070px;
+            height: 680px;
+            padding: 40px 0;
+            margin: 0;
+            background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/bgimg/generaldesctop.jpg);
+
+            @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+
+                background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+                    url(../img/bgimg/generaldesctop@2x.jpg);
+
+            }
+        }
+
+    }
+
+
+    &__servic {
+
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 738px;
+        background-image: url(../img/bgimg/servicmob.png), linear-gradient(#111319, #111319);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+
+            background-image: url(../img/bgimg/servicmob@2x.png),
+                linear-gradient(#111319, #111319);
+
+        }
+        @include mobil {
+            background-image: url(../img/bgimg/servictable.png), linear-gradient(#111319, #111319);
+            @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+        
+                background-image: url(../img/bgimg/servictable@2x.png),
+                    linear-gradient(#111319, #111319);
+        
+            }
+        }
+
+        @include table {
+            padding-top: 100px;
+            padding-bottom: 100px;
+            height: 856px;
+            background-image: url(../img/bgimg/servicdesctop.png), linear-gradient(#111319, #111319);
+
+            @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+
+                background-image: url(../img/bgimg/servicdesctop@2x.png),
+                    linear-gradient(#111319, #111319);
+
+            }
+
+        }
+
+        @include desctop {
+            padding-top: 120px;
+            padding-bottom: 120px;
+            height: 692px;
+            background-image: url(../img/bgimg/servicdesctop.png), linear-gradient(#111319, #111319);
+            @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+        
+                background-image: url(../img/bgimg/servicdesctop@2x.png),
+                    linear-gradient(#111319, #111319);
+        
+            }
+        }
+
+    }
+
+    &__team {
+        background-color: #F7F7F7;
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include table {
+            padding-top: 100px;
+            padding-bottom: 100px;
+            height: 1962px;
+        }
+
+
+    }
+
+    &__form {
+        max-width: 1600px;
+        height: 557px;
+        background-color: $form-bg-color;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include table {
+            padding-top: 100px;
+            padding-bottom: 100px;
+            height: 521px;
+        }
+
+        @include desctop {
+            padding-top: 130px;
+            padding-bottom: 183px;
+            height: 634px;
+            width: 800px;
+            margin: 0;
+
+        }
+    }
+
+    &__address {
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 496px;
+        background-image: url(../img/bgimg/bg-address.png), linear-gradient(#191C26, #191C26);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+
+            background-image: url(../img/bgimg/bg-address@2x.png),
+                linear-gradient(#191C26, #191C26);
+
+        }
+
+        @include table {
+            adding-top: 100px;
+            padding-bottom: 100px;
+            background-image: url(../img/bgimg/addresstable.png), linear-gradient(#191C26, #191C26);
+
+            @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+
+                background-image: url(../img/bgimg/addresstable@2x.png),
+                    linear-gradient(#191C26, #191C26);
+
+            }
+        }
+
+        @include desctop {
+            padding-top: 120px;
+            padding-bottom: 120px;
+            width: 800px;
+            height: 634px;
+            margin: 0;
+            background-image: url(../img/bgimg/addressdesctop.png), linear-gradient(#191C26, #191C26);
+            @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+        
+                background-image: url(../img/bgimg/addressdesctop@2x.png),
+                    linear-gradient(#191C26, #191C26);
+        
+            }
+        }
+    }
+
+
+    &--benefits {
+        @include min-mobil {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+
+        @include desctop {
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
+
+
+    }
+
+    &__progress {
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+        @include desctop {
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    padding-left: 31px;
+    padding-right: 31px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mobil {
+        width: 480px;
+    }
+
+    @include table {
+        width: 768px;
+    }
+
+    @include desctop {
+        width: 1170px;
+        padding: 0;
+    }
+
+    &__general {
+        @include table {
+            max-width: 570px;
+            padding-left: 20px;
+            padding-right: 20px;
+
+            &--hero {
+                width: 360px;
+                margin: 156px auto 0 auto;
+
+
+            }
+        }
+
+        @include desctop {
+            max-width: 1070px;
+            padding-left: 100px;
+            padding-right: 20px;
+
+            &--hero {
+                margin-top: 184px;
+                width: 444px;
+            }
+
+        }
+
+        &--desctop {
+            display: flex;
+            flex-direction: column;
+            margin-left: auto;
+
+            @include desctop {
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        &--flex {
+            max-width: 530px;
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+
+            @include desctop {
+                max-width: 950px;
+            }
+        }
+
+    }
+
+    &__header {
+        padding-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include min-table {
+            width: 90px;
+            height: 680px;
+            flex-direction: column;
+            padding: 32px 11px 40px 11px;
+        }
+
+    }
+
+    &__general--socials {
+        @include max-table {
+            display: none;
+        }
+
+    }
+
+    &__servic {
+        padding: 0 31px;
+
+        @include table {
+            padding: 0 39px;
+        }
+
+        @include desctop {
+            width: 1170px;
+            padding: 0;
+        }
+    }
+
+    &--benefits {
+        @include min-table {
+            display: flex;
+            width: 100%;
+            padding: 0 39px;
+        }
+    }
+
+    &__progress {
+        padding: 0 31px;
+
+        @include table {
+            padding: 0 39px;
+        }
+
+        @include desctop {
+            display: flex;
+            width: 1170px;
+            padding-left: 100px;
+            padding-right: 70px;
+        }
+    }
+
+    &__team {
+        @include table {
+            padding: 0 159px;
+        }
+
+    }
+
+    &__portfolio {
+        @include table {
+            padding-left: 39px;
+            padding-right: 39px;
+        }
+    }
+
+    &__form {
+        @include table {
+            padding: 0 39px;
+        }
+
+        @include desctop {
+            padding-right: 30px;
+            width: 600px;
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+
+    }
+
+    &__address {
+        @include table {
+            display: flex;
+
+        }
+
+        @include desctop {
+            width: 600px;
+            margin: 0;
+        }
+    }
+
+    &__work {
+        @include table {
+            margin-left: 30px;
+            padding-top: 90px;
+        }
+    }
+
+    &__img {
+        margin-right: 30px;
+        @include table {
+            max-width: 369px;
+        }
+
+        @include desctop {
+            display: flex;
+            flex: 1 1 50%;
+            // align-items: center;
+            // justify-content: center;
+
+        }
+
+
+
+    }
+
+    &__benefits-descr {
+        @include table {
+            max-width: 369px;
+        }
+        @include desctop {
+            flex: 1 1 50%;
+            width: 470px;
+        }
+    }
+
+    &__address {
+        @include desctop {
+            padding-left: 100px;
+            max-width: 800px;
+        }
+    }
+
+
+
+
+
+}

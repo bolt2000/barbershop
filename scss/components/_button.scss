@@ -1,0 +1,88 @@
+    .btn {
+        min-width: 160px;
+        height: 40px;
+        padding: 12px 20px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.33;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        border: 1px solid $btn-border-color;
+        border-radius: 25px;
+        background-color: transparent;
+        text-decoration: none;
+        @include transition (all);
+        
+
+        &__header {
+            color: $primer-text-color;
+            @include max-table {
+               display: none;
+            }
+            @include table {
+                margin-left: auto;
+            }
+
+            &:hover {
+                color: $primer-text-color;
+                background-color: $btn-border-color;
+            }
+            @include desctop {
+                order: 1;
+                margin-left: 40px;
+            }
+        }
+
+        &__benefits {
+            margin-top: 20px;
+            color: $primer-title-color;
+
+            &:hover {
+                color: $primer-text-color;
+                background-color: $btn-border-color;
+                
+            }
+
+            @include min-table {
+                margin-top: 77px;
+            }
+            @include desctop {
+                margin-top: 42px;
+            }
+        }
+
+        &__servic {
+            display: block;
+            margin: 40px auto 0 auto;
+            color: $primer-text-color;
+            width: max-content;
+
+                        
+            &:hover {
+                color: $primer-text-color;
+                background-color: $btn-border-color;
+            }
+        }
+
+        &__form {
+            color: $primer-text-color;
+            margin: 0 auto;
+            @include table {
+                margin: 0;
+            }
+            @include desctop {
+                align-items: flex-start;
+                margin: 0;
+            }
+            &:hover {
+                color: $primer-text-color;
+                background-color: $btn-border-color;
+                
+            }
+            
+        }
+
+
+        
+    }
+

@@ -1,0 +1,118 @@
+.address {
+
+    &__info {
+        margin: 0 0 40px 0;
+        font-family: $font-Releway;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.05em;
+        color: $primer-text-color;
+        @include max-mobil {
+            font-size: 26px;
+            line-height: 1.1;
+        }
+        @include min-table {
+            text-align: start;
+        }
+             
+    }
+
+    &__descr {
+        margin: 0 0 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        @include table {
+            width: 330px;
+            padding-right: 72px;
+        }
+        @include desctop {
+            width: 230px;
+        }
+    }
+    
+    &__svg {
+        margin-right: 16px;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 1.67;
+        letter-spacing: 0.02em;
+        color: $servic-text-color;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+        &--position {
+            margin: 0 0 44px 0;
+            @include desctop {
+                margin: 0 0 70px 0;
+            }
+        }
+    }
+
+    &__tel-mail {
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.67;
+        letter-spacing: 0.02em;
+        color: $servic-text-color;
+        font-style: normal;
+
+    }
+
+}
+
+.work-schedule {
+    margin: 0 0 20px 0;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $primer-text-color;
+
+    &::before {
+        content: "";
+        width: 60px;
+        height: 1px;
+        background-color: currentColor;
+        margin-right: 20px;
+
+    }
+
+    &__descr {
+        margin: 0;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.67;
+        letter-spacing: 0.02em;
+        color: $servic-text-color;
+
+    }
+
+}
+
+.container-lower {
+    @include desctop {
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}

@@ -1,0 +1,143 @@
+.progress__subtitle {
+    display: flex;
+    align-items: center;
+    margin: 0 0 20px 0;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color: $primer-title-color;
+    @include min-table {
+
+    }
+
+    &::before {
+        content: "";
+        width: 60px;
+        height: 1px;
+        background-color: currentColor;
+        margin-right: 20px;
+    }
+}
+ .progress__title {
+    margin: 0 0 20px 0;
+    width: 100%;
+    font-weight: 700;
+    font-family: $font-Releway;
+    font-size: 42px;
+    line-height: 1.16;
+    letter-spacing: 0.048em;
+    color: $primer-title-color;
+    @include max-mobil {
+        font-size: 26px;
+        line-height: 1.1;
+    }
+
+    @include min-table {
+        width: 449px;
+    }
+
+}
+
+.progress__slogan {
+    margin: 0 0 44px 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: $third-text-color;
+
+    @include min-table {
+       width: 500px;
+    }
+}
+
+.progress-list {
+    width: 100%;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    &__container {
+        width: 100%;
+    }
+    @include table {
+        margin-left: 239px;
+        width: 450px;
+    }
+    @include desctop {
+        width: 370px;
+        margin: 0;
+    }
+    
+    
+    &__item {
+        width: 100%;
+        height: 133px;
+        padding: 20px 36px;
+        background: #F7F7F7;
+        @include mobil {
+            width: 193px;
+        }
+
+        &--indent {
+            margin-top: 35px;
+            @media screen and (max-width: 479px) {
+                margin: 0;
+            }
+        }
+        &--shift {
+            margin-top: -30px;
+            @media screen and (max-width: 479px) {
+                margin: 0;
+            }
+        }
+
+        @include min-table {
+            width: 210px;
+        }
+        @include desctop {
+            width: 170px;
+        }
+    }
+
+    &__numbers {
+        font-weight: 700;
+        font-size: 42px;
+        margin: 0 0 6px 0;
+        line-height: 1.36;
+        letter-spacing: 0.05em;
+        display: block;
+        text-align: center;
+        color: $primer-title-color;
+    }
+
+    &__sup {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.38;
+        vertical-align: super;
+        color: $btn-border-color;
+    }
+    &__descr {
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 15px;
+        color: $primer-title-color;
+    }
+
+
+}
+.progress-descr {
+    @include desctop {
+        order: 1;
+        margin-left: 130px;
+    }
+    
+}

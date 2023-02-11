@@ -1,0 +1,129 @@
+.section-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1600px;
+
+}
+.header {
+    width: 100%;
+    @include max-table {
+        position: absolute;
+    }
+    @include min-table {
+        width: 90%;
+        margin-right: 30px;
+    }
+    @include desctop {
+        width: 100%;
+        margin-right: 0;
+
+    }
+
+
+    &__cont {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $primer-text-color;
+        display: block;
+        text-align: end;
+        margin-top: 20px;
+        @include transition (all);
+        
+        &:hover,
+        &:active {
+            color: $btn-border-color;
+        }
+
+        @include max-table {
+            display: none;
+        }
+        @include desctop {
+            margin: 0;
+        }
+          
+    }
+    
+    &__socials-list {
+        align-items: center;
+        margin: 0;
+        padding-left: 0;
+
+        :not(:last-child) {
+            margin-bottom: 40px;
+        }
+
+    }
+    &__social-item {
+
+        list-style: none;
+        writing-mode: vertical-lr;
+        transform: rotate(-180deg);
+        
+     
+    }
+    &__social-item--before {
+        display: flex;
+        align-items: center;
+    }
+    &__social-item--before::before {
+        content: "";
+        width: 1px;
+        height: 60px;
+        background-color: $primer-title-color;
+        margin-bottom: 40px;
+    }
+
+    &__social-link {
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 1.36;
+        letter-spacing: 0.2em;
+        color: $primer-title-color;
+        @include transition (color);
+        
+
+        &:hover {
+            color: $btn-border-color;
+        }
+    }
+
+
+}
+
+.logo {
+    display: inline-block;
+    text-decoration: none;
+
+    &__svg {
+        display: block;
+    }
+
+    &__icon {
+        fill: $primer-text-color;
+        @include min-table {
+            fill: $primer-title-color;
+        }
+    }
+}
+
+.hero-wrapper {
+    @include min-mobil {
+        width: 690px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+
+    }
+    @include desctop {
+        width: 1170px;
+
+    }
+    
+}
+

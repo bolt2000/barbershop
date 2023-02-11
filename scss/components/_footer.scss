@@ -1,0 +1,89 @@
+.footer {
+    height: 138px;
+    max-width: 1600px;
+    background-color:#F7F7F7;
+    margin-right: auto;
+    margin-left: auto;
+
+    
+    
+}
+.container-footer{
+    padding: 44px 31px;
+    @include mobil {
+        width: 480px;
+    }
+    @include table {
+        width: 768px;
+        height: 127px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 56px 39px;
+    }
+    @include desctop {
+        width: 1200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+
+.footer-socials {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 0 20px 0;
+
+    &__item {
+        padding: 5px 0;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 1.36;
+        letter-spacing: 0.2em;
+        color: $primer-title-color;
+        @include transition (color);
+
+        &:hover,
+        &:active  {
+            color: $btn-border-color;
+        }
+    }
+
+    :not(:last-child) {
+        margin-right: 40px;
+    }
+
+    &::before {
+        content: "";
+        width: 60px;
+        height: 1px;
+        background-color: currentColor;
+        margin-right: 40px;
+
+    }
+    @include min-table {
+        order: 1;
+        margin: 0;
+    }
+}
+
+.protection-rights {
+    margin: 0;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: $servic-text-color;
+
+    &__span {
+        margin-right: 6px;
+    }
+}

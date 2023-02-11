@@ -1,0 +1,176 @@
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 796px;
+    padding: 118px 174px 40px 40px;
+    background-color: $primer-text-color;
+    box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.04),
+        -2px 0px 4px rgba(0, 0, 0, 0.08),
+        -1px 0px 3px rgba(0, 0, 0, 0.16);
+    z-index: 999;
+
+    transform: translateX(100%);
+    @include transition (transform);
+
+    &.is-open {
+        width: 100vw;
+        transform: translateX(30%);
+    }
+
+    @include min-table {
+        display: none;
+    }
+}
+
+.menu-toggle {
+    width: 40px;
+    height: 40px;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    outline: none;
+    border: none;
+
+    @include min-table {
+        display: none;
+    }
+
+
+
+    .menu-container & {
+        position: absolute;
+        top: 48px;
+        right: 35%;
+        background-color: $primer-text-color;
+    }
+
+    &__icon--close {
+        fill: currentColor;
+        @include transition (fill);
+
+        &:hover,
+        &:active {
+            fill: $btn-border-color;
+        }
+    }
+    &__icon--open {
+        fill: $primer-text-color;
+        @include transition (fill);
+
+        &:hover,
+        &:active {
+            fill: $btn-border-color;
+        }
+    }
+
+
+}
+
+.nav-mobil {
+    
+    &__list {
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+    }
+    :not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+
+    &__link {
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.39;
+        letter-spacing: 0.1em;
+        color: $primer-title-color;
+        @include transition (color);
+
+        &:hover,
+        &:active {
+            color: $btn-border-color;
+        }
+
+    }
+
+    &__cont {
+        display: block;
+        margin: 64px 0 24px 0;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.39;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $primer-title-color;
+        @include transition (color);
+    
+        &:hover,
+        &:active {
+            color: $btn-border-color;
+        }
+    }
+
+    &__socials {
+        padding-left: 0;
+        margin: 64px 0 0 0;
+        list-style: none;
+        
+    }
+    &__link {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.36;
+        letter-spacing: 0.2em;
+        color: $primer-title-color;
+
+        &--flex::before {
+            content: "";
+            width: 60px;
+            height: 1px;
+            background-color: currentColor;
+            margin-right: 40px;
+
+            @include max-mobil {
+               display: none;
+            }
+        }
+
+        &--position {
+            display: block;
+            
+        }
+       
+
+        &:hover,
+        &:active {
+            color: $btn-border-color;
+        }
+    }
+    &__social--position {
+        margin: 24px 0 0 100px;
+        @include max-mobil {
+            margin: 24px 0 0 0;
+        }
+    }
+    &__btn {
+        @include max-mobil {
+            font-size: 10px;
+        }
+    }
+
+
+
+}
+
+
+
